@@ -62,4 +62,6 @@ t1.addTask("work1");
 t1.addTask("work2");
 t1.addTask("work3");
 t1.addTask("work4");
+t1.addTask("work5");
+t1.addTask("work6");
 console.log(t1.getTasks());
