@@ -19,6 +19,10 @@ class Controller {
   }
 
   ListOfOptions() {
+    console.log(`1: createTask
+2: updateTask
+3: deleteTask
+`);
     return {
       1: this.task.createTask,
       2: this.task.updateTask,
@@ -26,10 +30,11 @@ class Controller {
     };
   }
 
+  // displayListOfOptions
+
   start() {
-    const userChoice = +prompt("Enter Your Choice");
     const tasks = this.ListOfOptions();
-    console.log(tasks);
+    const userChoice = +prompt("Enter Your Choice");
     if (!(userChoice in tasks)) this.error();
   }
 }
